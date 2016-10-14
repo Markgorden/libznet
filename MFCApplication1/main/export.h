@@ -1,5 +1,5 @@
-#ifndef _COE_LIB_STATUS_H_
-#define _COE_LIB_STATUS_H_
+#ifndef _LIBZNET_LIB_EXPORT_H_
+#define _LIBZNET_LIB_EXPORT_H_
 
 #ifdef __cplusplus
 extern "C"
