@@ -1,0 +1,23 @@
+Linux下一个线程里一个select是可以的。
+one event loop per thread.
+但 貌似 Windows下 ，one iocp per thread 就不行
+必须一个iocp ，然后给工作线程活。
+貌似只能创建一个IOCP接口，然后接收到数据后，再派给工作线程干活。
+不能各个线程有一个自己的IOCP，即one event loop per thread.貌似这样不行。但Linux下一个线程里一个select是可以的。
+
+
+第二次 init event loop时，第一个线程就会收不到任务数据了。
+因此。目前的做法时，只能创建一个event loop。
+一个event loop，把各个线程里的fd都添加到这个event loop里去。即共用一个event loop。
+这个event loop里，收到事件后，再判断一下是哪个fd发回来的，根据这个fd去找到线程。再把消息派发到具体的线程中去。
+
+效率是一样的。只是只有一个event loop而已。
+各个线程仍然不耽误。
+
+完成端口，就是维护在内核中的一个队列。
+相当于epoll。
+
+这是 one iocp per thread 把这个改成只有一个event loop的版本。
+
+2016.10.14
+

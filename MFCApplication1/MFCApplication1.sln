@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCApplication1", "MFCApplication1\MFCApplication1.vcxproj", "{1402BCD4-A1A2-47CE-82E4-5F1EB4015FEE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zlibaenet", "..\libaenet\zlibaenet.vcxproj", "{66FE1BEF-79ED-454B-AB2D-53160E65106D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1402BCD4-A1A2-47CE-82E4-5F1EB4015FEE}.Debug|x64.ActiveCfg = Debug|x64
+		{1402BCD4-A1A2-47CE-82E4-5F1EB4015FEE}.Debug|x64.Build.0 = Debug|x64
+		{1402BCD4-A1A2-47CE-82E4-5F1EB4015FEE}.Debug|x86.ActiveCfg = Debug|Win32
+		{1402BCD4-A1A2-47CE-82E4-5F1EB4015FEE}.Debug|x86.Build.0 = Debug|Win32
+		{1402BCD4-A1A2-47CE-82E4-5F1EB4015FEE}.Release|x64.ActiveCfg = Release|x64
+		{1402BCD4-A1A2-47CE-82E4-5F1EB4015FEE}.Release|x64.Build.0 = Release|x64
+		{1402BCD4-A1A2-47CE-82E4-5F1EB4015FEE}.Release|x86.ActiveCfg = Release|Win32
+		{1402BCD4-A1A2-47CE-82E4-5F1EB4015FEE}.Release|x86.Build.0 = Release|Win32
+		{66FE1BEF-79ED-454B-AB2D-53160E65106D}.Debug|x64.ActiveCfg = Debug|x64
+		{66FE1BEF-79ED-454B-AB2D-53160E65106D}.Debug|x64.Build.0 = Debug|x64
+		{66FE1BEF-79ED-454B-AB2D-53160E65106D}.Debug|x86.ActiveCfg = Debug|Win32
+		{66FE1BEF-79ED-454B-AB2D-53160E65106D}.Debug|x86.Build.0 = Debug|Win32
+		{66FE1BEF-79ED-454B-AB2D-53160E65106D}.Release|x64.ActiveCfg = Release|x64
+		{66FE1BEF-79ED-454B-AB2D-53160E65106D}.Release|x64.Build.0 = Release|x64
+		{66FE1BEF-79ED-454B-AB2D-53160E65106D}.Release|x86.ActiveCfg = Release|Win32
+		{66FE1BEF-79ED-454B-AB2D-53160E65106D}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

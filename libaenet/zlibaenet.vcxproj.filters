@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Win32_Interop">
+      <UniqueIdentifier>{4e20e93e-c84e-4647-a189-5efcc79a84b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libaenet">
+      <UniqueIdentifier>{373c1312-1822-413a-ab63-a5b8a9e39cf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libaenet">
+      <UniqueIdentifier>{6993c2ad-96c9-46a2-a6e7-86e9fbc047b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Win32_Interop">
+      <UniqueIdentifier>{1a5275a7-1f83-4e68-99b8-6f2f71e74380}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ae.c">
+      <Filter>Source Files\libaenet</Filter>
+    </ClCompile>
+    <ClCompile Include="net.c">
+      <Filter>Source Files\libaenet</Filter>
+    </ClCompile>
+    <ClCompile Include="select.c">
+      <Filter>Source Files\libaenet</Filter>
+    </ClCompile>
+    <ClCompile Include="win32_interop\Win32_ANSI.c">
+      <Filter>Source Files\Win32_Interop</Filter>
+    </ClCompile>
+    <ClCompile Include="win32_interop\Win32_APIs.c">
+      <Filter>Source Files\Win32_Interop</Filter>
+    </ClCompile>
+    <ClCompile Include="win32_interop\Win32_CommandLine.cpp">
+      <Filter>Source Files\Win32_Interop</Filter>
+    </ClCompile>
+    <ClCompile Include="win32_interop\Win32_Common.cpp">
+      <Filter>Source Files\Win32_Interop</Filter>
+    </ClCompile>
+    <ClCompile Include="win32_interop\Win32_dlmalloc.c">
+      <Filter>Source Files\Win32_Interop</Filter>
+    </ClCompile>
+    <ClCompile Include="win32_interop\Win32_Error.c">
+      <Filter>Source Files\Win32_Interop</Filter>
+    </ClCompile>
+    <ClCompile Include="win32_interop\Win32_EventLog.cpp">
+      <Filter>Source Files\Win32_Interop</Filter>
+    </ClCompile>
+    <ClCompile Include="win32_interop\Win32_FDAPI.cpp">
+      <Filter>Source Files\Win32_Interop</Filter>
+    </ClCompile>
+    <ClCompile Include="win32_interop\Win32_fdapi_crt.cpp">
+      <Filter>Source Files\Win32_Interop</Filter>
+    </ClCompile>
+    <ClCompile Include="win32_interop\Win32_PThread.c">
+      <Filter>Source Files\Win32_Interop</Filter>
+    </ClCompile>
+    <ClCompile Include="win32_interop\win32_rfdmap.cpp">
+      <Filter>Source Files\Win32_Interop</Filter>
+    </ClCompile>
+    <ClCompile Include="win32_interop\Win32_service.cpp">
+      <Filter>Source Files\Win32_Interop</Filter>
+    </ClCompile>
+    <ClCompile Include="win32_interop\Win32_Signal_Process.c">
+      <Filter>Source Files\Win32_Interop</Filter>
+    </ClCompile>
+    <ClCompile Include="win32_interop\Win32_StackTrace.cpp">
+      <Filter>Source Files\Win32_Interop</Filter>
+    </ClCompile>
+    <ClCompile Include="win32_interop\Win32_ThreadControl.c">
+      <Filter>Source Files\Win32_Interop</Filter>
+    </ClCompile>
+    <ClCompile Include="win32_interop\Win32_Time.c">
+      <Filter>Source Files\Win32_Interop</Filter>
+    </ClCompile>
+    <ClCompile Include="win32_interop\Win32_variadicFunctor.cpp">
+      <Filter>Source Files\Win32_Interop</Filter>
+    </ClCompile>
+    <ClCompile Include="win32_interop\win32_wsiocp.c">
+      <Filter>Source Files\Win32_Interop</Filter>
+    </ClCompile>
+    <ClCompile Include="win32_interop\win32fixes.c">
+      <Filter>Source Files\Win32_Interop</Filter>
+    </ClCompile>
+    <ClCompile Include="wsiocp.c">
+      <Filter>Source Files\libaenet</Filter>
+    </ClCompile>
+    <ClCompile Include="zmalloc.c">
+      <Filter>Source Files\libaenet</Filter>
+    </ClCompile>
+    <ClCompile Include="adlist.c">
+      <Filter>Source Files\libaenet</Filter>
+    </ClCompile>
+    <ClCompile Include="gettimeofday.c">
+      <Filter>Source Files\libaenet</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="net.h">
+      <Filter>Header Files\libaenet</Filter>
+    </ClInclude>
+    <ClInclude Include="ae.h">
+      <Filter>Header Files\libaenet</Filter>
+    </ClInclude>
+    <ClInclude Include="win32_interop\EventLog.h">
+      <Filter>Header Files\Win32_Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="win32_interop\Win32_ANSI.h">
+      <Filter>Header Files\Win32_Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="win32_interop\Win32_APIs.h">
+      <Filter>Header Files\Win32_Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="win32_interop\Win32_Assert.h">
+      <Filter>Header Files\Win32_Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="win32_interop\Win32_CommandLine.h">
+      <Filter>Header Files\Win32_Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="win32_interop\Win32_Common.h">
+      <Filter>Header Files\Win32_Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="win32_interop\Win32_dlmalloc.h">
+      <Filter>Header Files\Win32_Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="win32_interop\Win32_Error.h">
+      <Filter>Header Files\Win32_Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="win32_interop\Win32_EventLog.h">
+      <Filter>Header Files\Win32_Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="win32_interop\Win32_FDAPI.h">
+      <Filter>Header Files\Win32_Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="win32_interop\Win32_fdapi_crt.h">
+      <Filter>Header Files\Win32_Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="win32_interop\Win32_Portability.h">
+      <Filter>Header Files\Win32_Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="win32_interop\Win32_PThread.h">
+      <Filter>Header Files\Win32_Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="win32_interop\win32_rfdmap.h">
+      <Filter>Header Files\Win32_Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="win32_interop\Win32_Service.h">
+      <Filter>Header Files\Win32_Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="win32_interop\Win32_Signal_Process.h">
+      <Filter>Header Files\Win32_Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="win32_interop\Win32_SmartHandle.h">
+      <Filter>Header Files\Win32_Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="win32_interop\Win32_StackTrace.h">
+      <Filter>Header Files\Win32_Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="win32_interop\Win32_ThreadControl.h">
+      <Filter>Header Files\Win32_Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="win32_interop\Win32_Time.h">
+      <Filter>Header Files\Win32_Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="win32_interop\win32_types.h">
+      <Filter>Header Files\Win32_Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="win32_interop\win32_types_hiredis.h">
+      <Filter>Header Files\Win32_Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="win32_interop\Win32_variadicFunctor.h">
+      <Filter>Header Files\Win32_Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="win32_interop\win32_winapifamily.h">
+      <Filter>Header Files\Win32_Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="win32_interop\win32_wsiocp.h">
+      <Filter>Header Files\Win32_Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="win32_interop\win32_wsiocp2.h">
+      <Filter>Header Files\Win32_Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="win32_interop\win32fixes.h">
+      <Filter>Header Files\Win32_Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="win32_interop\WS2tcpip.h">
+      <Filter>Header Files\Win32_Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="zmalloc.h">
+      <Filter>Header Files\libaenet</Filter>
+    </ClInclude>
+    <ClInclude Include="Macros.h">
+      <Filter>Header Files\libaenet</Filter>
+    </ClInclude>
+    <ClInclude Include="adlist.h">
+      <Filter>Header Files\libaenet</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="win32_interop\resources\EventLog.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="win32_interop\resources\EventLog_MSG00409.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

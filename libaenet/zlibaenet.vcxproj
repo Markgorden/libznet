@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{66FE1BEF-79ED-454B-AB2D-53160E65106D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_WINDOWS;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="adlist.c" />
+    <ClCompile Include="ae.c" />
+    <ClCompile Include="gettimeofday.c" />
+    <ClCompile Include="net.c" />
+    <ClCompile Include="select.c" />
+    <ClCompile Include="win32_interop\win32fixes.c" />
+    <ClCompile Include="win32_interop\Win32_ANSI.c" />
+    <ClCompile Include="win32_interop\Win32_APIs.c" />
+    <ClCompile Include="win32_interop\Win32_CommandLine.cpp" />
+    <ClCompile Include="win32_interop\Win32_Common.cpp" />
+    <ClCompile Include="win32_interop\Win32_dlmalloc.c" />
+    <ClCompile Include="win32_interop\Win32_Error.c" />
+    <ClCompile Include="win32_interop\Win32_EventLog.cpp" />
+    <ClCompile Include="win32_interop\Win32_FDAPI.cpp" />
+    <ClCompile Include="win32_interop\Win32_fdapi_crt.cpp" />
+    <ClCompile Include="win32_interop\Win32_PThread.c" />
+    <ClCompile Include="win32_interop\win32_rfdmap.cpp" />
+    <ClCompile Include="win32_interop\Win32_service.cpp" />
+    <ClCompile Include="win32_interop\Win32_Signal_Process.c" />
+    <ClCompile Include="win32_interop\Win32_StackTrace.cpp" />
+    <ClCompile Include="win32_interop\Win32_ThreadControl.c" />
+    <ClCompile Include="win32_interop\Win32_Time.c" />
+    <ClCompile Include="win32_interop\Win32_variadicFunctor.cpp" />
+    <ClCompile Include="win32_interop\win32_wsiocp.c" />
+    <ClCompile Include="wsiocp.c" />
+    <ClCompile Include="zmalloc.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="adlist.h" />
+    <ClInclude Include="ae.h" />
+    <ClInclude Include="Macros.h" />
+    <ClInclude Include="net.h" />
+    <ClInclude Include="win32_interop\EventLog.h" />
+    <ClInclude Include="win32_interop\win32fixes.h" />
+    <ClInclude Include="win32_interop\Win32_ANSI.h" />
+    <ClInclude Include="win32_interop\Win32_APIs.h" />
+    <ClInclude Include="win32_interop\Win32_Assert.h" />
+    <ClInclude Include="win32_interop\Win32_CommandLine.h" />
+    <ClInclude Include="win32_interop\Win32_Common.h" />
+    <ClInclude Include="win32_interop\Win32_dlmalloc.h" />
+    <ClInclude Include="win32_interop\Win32_Error.h" />
+    <ClInclude Include="win32_interop\Win32_EventLog.h" />
+    <ClInclude Include="win32_interop\Win32_FDAPI.h" />
+    <ClInclude Include="win32_interop\Win32_fdapi_crt.h" />
+    <ClInclude Include="win32_interop\Win32_Portability.h" />
+    <ClInclude Include="win32_interop\Win32_PThread.h" />
+    <ClInclude Include="win32_interop\win32_rfdmap.h" />
+    <ClInclude Include="win32_interop\Win32_Service.h" />
+    <ClInclude Include="win32_interop\Win32_Signal_Process.h" />
+    <ClInclude Include="win32_interop\Win32_SmartHandle.h" />
+    <ClInclude Include="win32_interop\Win32_StackTrace.h" />
+    <ClInclude Include="win32_interop\Win32_ThreadControl.h" />
+    <ClInclude Include="win32_interop\Win32_Time.h" />
+    <ClInclude Include="win32_interop\win32_types.h" />
+    <ClInclude Include="win32_interop\win32_types_hiredis.h" />
+    <ClInclude Include="win32_interop\Win32_variadicFunctor.h" />
+    <ClInclude Include="win32_interop\win32_winapifamily.h" />
+    <ClInclude Include="win32_interop\win32_wsiocp.h" />
+    <ClInclude Include="win32_interop\win32_wsiocp2.h" />
+    <ClInclude Include="win32_interop\WS2tcpip.h" />
+    <ClInclude Include="zmalloc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="win32_interop\resources\EventLog.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="win32_interop\resources\EventLog_MSG00409.bin" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
