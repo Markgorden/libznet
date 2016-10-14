@@ -1,5 +1,5 @@
 # libznet
-A iocp wrapper for windows
+An iocp wrapper for windows
 
 libaenet -- is a network library for 
 Support for Linux, Unix, MAC, freebsd big concurrent network events.
