@@ -1,5 +1,5 @@
 # libznet
-An iocp wrapper for windows
+An iocp wrapper for windows based on libaenet
 and this version is demo for support for Windows via win32_interop.
 
 # libaenet
